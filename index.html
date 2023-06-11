@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <title>UIkit</title>
+  </head>
+  <body>
+    <div class="uk-container-large uk-container">
+      <!-- NAVBAR -->
+      <nav class="uk-navbar-container uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
+        <div class="uk-container">
+          <nav uk-navbar>
+            <!-- LOGO -->
+            <div class="uk-width-1-5 uk-navbar-left">
+              <a class="uk-text-decoration-none" href="#">
+                <div class="uk-flex uk-flex-middle">
+                  <div class="uk-width-2-2 uk-text-large uk-text-bolder uk-text-uppercase uk-margin-right">
+                    Logo
+                  </div>
+                  <div class="uk-width-1-2">
+                    <img src="css/img/logo.svg" alt="logo image" />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- MENU-1 MENU-2 MENU-3 -->
+            <div class="uk-width-3-5 uk-navbar-center">
+              <ul class="uk-navbar-nav">
+                <!-- MENU-1 -->
+                <li class="uk-active">
+                  <a href="#">Menu-1</a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li class="uk-active"><a href="#">Active</a></li>
+                      <li>
+                        <a href="#">
+                          <span>Item</span> 
+                          <span class="uk-badge uk-background-muted uk-text-danger" style="border: 1px solid red;margin-left: 1em;">New</span>
+                        </a>
+                      </li>
+                      <li><a href="#">Item</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- MENU-2 -->
+                <li class="uk-parent">
+                  <li>
+                    <a href="#">Menu-2</a>
+                    <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li>
+                          <a href="#">
+                          <span>Item</span> 
+                          <span class="uk-badge uk-background-muted uk-text-danger" style="border: 1px solid red;margin-left: 1em;">
+                            New
+                          </span>
+                        </a>
+                      </li>
+                        <li><a href="#">Item</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </li>
+                <!-- MENU-3 -->
+                <li class="uk-parent">
+                  <a href="#">Menu-3</a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li class="uk-active"><a href="#">Active</a></li>
+                      <li><a href="#">Item</a></li>
+                      <li>
+                        <a href="#">
+                          <span>Item</span> 
+                          <span class="uk-badge uk-background-muted uk-text-danger" style="border: 1px solid red;margin-left: 1em;">
+                            New
+                          </span>
+                      </a>
+                    </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- USER -->
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav">
+                <li>
+                    <a class="uk-text-large uk-text-bolder uk-text-uppercase" href="#">
+                      <span uk-icon="user" class="uk-margin-right uk-padding-small" style="border:1px solid black;border-radius:50%;"></span>
+                      <span>User</span>
+                    </a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Выйти</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            </div>
+          </nav>
+        </div>
+      </nav>
+      <!-- DEVIDER -->
+      <hr class="uk-divider">
+      <!-- MAIN -->
+      <section class="uk-padding-small uk-background-muted">
+        <div class="uk-container">
+          <h1 class="uk-heading-medium">Title</h1>
+          <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officiis eveniet ratione iusto eius suscipit error distinctio corrupti ad, minima tenetur qui quos labore maxime temporibus possimus mollitia quidem. Ducimus nostrum aspernatur dicta, similique veritatis accusantium eos voluptates pariatur repudiandae inventore corporis magnam sed architecto sint asperiores alias iusto esse voluptatem. Rem possimus, fugiat voluptates culpa placeat quae odio recusandae nemo, molestias natus quis consequatur. Amet, suscipit eaque. Soluta ducimus nemo recusandae deserunt ipsa esse fugiat similique vel!
+          </section>
+          <form class="uk-form-horizontal uk-margin-large">
+              <!-- INPUT -->
+              <div class="uk-margin uk-flex uk-flex-middle">
+                <label class="uk-form-label uk-margin-large-right" for="form-horizontal-text">Text</label>
+                <div class="uk-form-controls uk-border-rounded uk-box-shadow-small">
+                    <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Some text...">
+                </div>
+            </div>
+            <!-- CHECKBOX -->
+            <div class="uk-margin uk-flex uk-flex-top">
+              <div class="uk-form-label uk-margin-large-right">Radio</div>
+              <div class="uk-form-controls uk-form-controls-text">
+                  <label><input class="uk-radio uk-box-shadow-small" type="radio" name="radio1"> Option 01</label><br>
+                  <label><input class="uk-radio uk-box-shadow-small" type="radio" name="radio1"> Option 02</label>
+              </div>
+          </div>
+            <!-- SELECT -->
+            <div class="uk-margin uk-flex uk-flex-middle">
+               <label class="uk-form-label uk-margin-large-right" for="form-horizontal-select">Select</label>
+               <div class="uk-form-controls">
+                 <select class="uk-select uk-border-rounded uk-box-shadow-small" id="form-horizontal-select">
+                    <option>Option 01</option>
+                    <option>Option 02</option>
+                 </select>
+               </div>
+            </div>
+            <!-- TWO BUTTONS -->
+            <div class="uk-button-group">
+              <button class="uk-button uk-button-default uk-text-uppercase uk-margin-right uk-background-default uk-border-rounded uk-box-shadow-small">BUTTON-1</button>
+              <button class="uk-button uk-button-default uk-background-default uk-border-rounded uk-box-shadow-small">BUTTON-2</button>
+          </div>
+          <!-- ONE BUTTON -->
+          <p uk-margin>
+            <button class="uk-button uk-button-default uk-background-default uk-border-rounded uk-box-shadow-small">BUTTON-3</button>
+        </p>
+        </form>
+      </div>
+      </section>
+    </div>
+  </body>
+</html>
